@@ -14,7 +14,7 @@ public class Main {
         System.err.println(pilaProcesos.isEmpty());*/
 
         // === PRUEBA DE IMPLEMENTACION DE UNA PILA CON UN ARRAY ===
-        PilaArrayImpl pilaArrayImpl = new PilaArrayImpl(10);
+        /*PilaArrayImpl pilaArrayImpl = new PilaArrayImpl(10);
         pilaArrayImpl.push("hola");
         pilaArrayImpl.push("soy");
         pilaArrayImpl.push("el");
@@ -27,7 +27,14 @@ public class Main {
         System.out.println(pilaArrayImpl.pop());
         System.out.println(pilaArrayImpl.pop());
         System.out.println(pilaArrayImpl.pop());
-        System.out.println(pilaArrayImpl.pop());
+        System.out.println(pilaArrayImpl.pop());*/
+
+        // =========== PRUEBA DE IMPLEMENTACION DE UNA PILA CON LISTAS ENLAZADAS ================
+        ColaImpl cola =new ColaImpl();
+        cola.enQueue("hola");
+        cola.enQueue("mundo");
+
+        System.out.println(cola.deQueue());
         
 
 
